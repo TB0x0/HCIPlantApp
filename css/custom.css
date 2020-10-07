@@ -9,6 +9,8 @@
 */
 
 body {
+background-image: url("../res/forestbg.jpg"); /*Background Image from Free-Photos user on Pixabay */
+background-size: cover;
 background-color: #436F8A;
 }
 
