@@ -1,0 +1,41 @@
+/* Created by Thomas McLean Oct 2020 for HCI Project */
+
+body {
+background-color: #eee;
+}
+
+.menu {
+  background-color: #FFF;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Menu link style */
+.menu a {
+  height: 3em;
+  width: 3em;
+  border-radius: 50%;
+  float: right;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  text-align: center;
+  padding: 1em 1em;
+  text-decoration: none;
+  font-size: 1em;
+  background-color: #ccc;
+}
+/* Hover styling */
+.menu a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Active styling */
+.menu a.active {
+  background-color: #4CAF50;
+  color: white;
+}
