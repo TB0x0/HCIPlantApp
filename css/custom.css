@@ -1,11 +1,66 @@
 /* Created by Thomas McLean Oct 2020 for HCI Project */
 
+/*
+ Color Scheme:
+  Background: #F7FBE1
+  Accent1: #BAC964
+  Accent2: #438A5E
+  Accent3: #436F8A
+*/
+
 body {
-background-color: #eee;
+background-color: #436F8A;
+}
+
+h1 {
+  text-align: center;
+}
+.calendar {
+  display: grid;
+  grid-gap: 2em;
+  grid-template-columns: auto auto auto auto auto auto auto;
+  justify-content: center;
+}
+
+.calendar-item {
+  background-color: #F7FBE1;
+  padding: 1em;
+}
+@media screen and (max-width: 1000px) {
+  .grid-container {
+    display: grid;
+    grid-gap: 2em;
+    grid-template-columns: auto;
+    justify-content: center;
+  }
+}
+
+.grid-container {
+  display: grid;
+  padding-top: 3em;
+  grid-gap: 2em;
+  grid-template-columns: auto auto;
+  justify-content: center;
+}
+
+.grid-item {
+  background-color: #F7FBE1;
+  padding: 1em;
+  border-radius: 5%;
+}
+
+/* Form styling */
+.image-upload>input {
+  display: none;
+}
+
+.formicon {
+  width: 4em;
+  height: 4em;
 }
 
 .menu {
-  background-color: #FFF;
+  opacity: 1;
   overflow: hidden;
   position: fixed;
   bottom: 0;
@@ -26,11 +81,11 @@ background-color: #eee;
   padding: 1em 1em;
   text-decoration: none;
   font-size: 1em;
-  background-color: #ccc;
+  background-color: #438A5E;
 }
 /* Hover styling */
 .menu a:hover {
-  background-color: #ddd;
+  background-color: #BAC964;
   color: black;
 }
 
@@ -38,4 +93,8 @@ background-color: #eee;
 .menu a.active {
   background-color: #4CAF50;
   color: white;
+}
+
+.text-center {
+  text-align: center;
 }
