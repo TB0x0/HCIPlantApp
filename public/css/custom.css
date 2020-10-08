@@ -19,16 +19,19 @@ h1 {
 }
 .calendar {
   display: grid;
-  grid-gap: 2em;
+  grid-gap: .5em;
   grid-template-columns: auto auto auto auto auto auto auto;
   justify-content: center;
 }
 
 .calendar-item {
   background-color: #F7FBE1;
+  border: 1px solid black;
+  border-radius: 5%;
   padding: 1em;
 }
-@media screen and (max-width: 1000px) {
+
+@media(max-width: 800px) {
   .grid-container {
     display: grid;
     grid-gap: 2em;
@@ -36,13 +39,14 @@ h1 {
     justify-content: center;
   }
 }
-
+@media(min-width: 801px) {
 .grid-container {
   display: grid;
   padding-top: 3em;
   grid-gap: 2em;
   grid-template-columns: auto auto;
   justify-content: center;
+}
 }
 
 .grid-item {
@@ -99,4 +103,17 @@ h1 {
 
 .text-center {
   text-align: center;
+}
+
+.today {
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
+}
+
+.today-item {
+  background-color: #F7FBE1;
+  padding: 1em;
+  border: 1px solid black;
+  border-radius: 5%;
 }
