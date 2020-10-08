@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HCIPlant</title>
+<link rel=stylesheet type="text/css" href="../css/custom.css">
+<script src="../js/showdate.js"></script>
+</head>
+
+<body>
+
+<!-- Navigation Menu 
+<div class="menu">
+  <a href="#" class="active">Dash</a>
+  <a href="#">Calendar</a>
+  <a href="#">Plants</a>
+</div>
+ End Navigation Menu -->
+
+<div class="grid-container">
+  <div class="grid-item">
+    <h1>Today</h1>
+    <p id="date" class="text-center"></p>
+    <div class="today">
+      <div class="today-item"></div>
+    </div>
+  </div>
+
+  <div class="grid-item">
+    <h1>Calendar</h1>
+      <div class="calendar">
+        <div class="calendar-item">M</div>
+        <div class="calendar-item">T</div>
+        <div class="calendar-item">W</div>
+        <div class="calendar-item">Th</div>
+        <div class="calendar-item">F</div>
+        <div class="calendar-item">S</div>
+        <div class="calendar-item">Su</div>
+      </div>
+  </div>
+
+  <div class="grid-item">
+    <h1>Add Plant</h1>
+    <form action="/#">
+      <div class="image-upload">
+        <label for="file-input">
+          <img class="formicon" src="https://icon-library.net/images/upload-photo-icon/upload-photo-icon-21.jpg"/>
+        </label>
+        <input id="file-input" type="file" />
+      </div>
+      <div class="text-upload">
+        <label for="ScientificName"></label>
+        <input type="text" id="sname" name="scientific" placeholder="Scientific Name">
+      </div>
+      <div class="text-upload">
+        <label for="GivenName"></label>
+        <input type="text" id="gname" name="given" placeholder="Custom Name">
+      </div>
+      <div class="radio-select">
+        <p>Select the native environment of this plant:</p>
+        <input type="radio" id="desert" name="environment" value="desert">
+        <label for="desert">Desert</label><br>
+        <input type="radio" id="temperate" name="environment" value="temperate">
+        <label for="female">Temperate</label><br>
+        <input type="radio" id="tropical" name="environment" value="tropical">
+        <label for="other">Tropical</label> 
+      </div>
+      <button type="submit">Add Plant</button>
+    </form> 
+  </div>
+
+  <div class="grid-item">
+    <h1>Plants</h1>
+  </div>
+  
+</div>
+</body>
+</html>
