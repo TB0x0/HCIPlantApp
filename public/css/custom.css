@@ -86,6 +86,9 @@ h1 {
   display: none;
 }
 
+.inline {
+  display: inline-block;
+}
 .formicon {
   width: 4em;
   height: 4em;
@@ -134,7 +137,6 @@ h1 {
 .today {
   display: grid;
   grid-template-columns: auto;
-  grid-gap: 1em;
   justify-content: center;
   max-height: 300px;
   overflow-y: auto;
@@ -142,11 +144,15 @@ h1 {
 }
 
 .today-item {
-  background-color: #F7FBE1;
-  padding: 1em;
-  border-radius: 3%;
+  background-color:#438A5E;
+  padding: .5em;
   align-items: center;
 }
+
+.today-item:hover {
+  background-color: #4CAF50;
+}
+
 .plants {
   display: inline-grid;
   grid-template-columns: auto auto;
