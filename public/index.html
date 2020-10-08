@@ -4,33 +4,40 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>HCIPlant</title>
-<link rel=stylesheet type="text/css" href="../css/custom.css">
-<script src="../js/showdate.js"></script>
+<link rel=stylesheet type="text/css" href="css/custom.css">
+<script src="js/showdate.js"></script>
+<script src="js/todayapplet.js"></script>
 </head>
 
 <body>
 
-<!-- Navigation Menu 
+<!-- Navigation Menu -->
 <div class="menu">
-  <a href="#" class="active">Dash</a>
-  <a href="#">Calendar</a>
-  <a href="#">Plants</a>
+  <a href="index.html" class="active">Dash</a>
+  <a href="pages/about.html">About</a>
 </div>
- End Navigation Menu -->
+<!-- End Navigation Menu -->
 
 <div class="grid-container">
   <div class="grid-item">
     <h1>Today</h1>
     <p id="date" class="text-center"></p>
     <div class="today">
-      <div class="today-item"></div>
+      <div class="today-item" name="today">[water icon] Water Plant 1</div>
+      <div class="today-item" name="today">[water icon] Water Plant 2</div>
+      <div class="today-item" name="today">[mist icon] Mist Plant 4</div>
     </div>
   </div>
 
   <div class="grid-item">
     <h1>Calendar</h1>
       <div class="calendar">
-        <div class="calendar-item">M</div>
+        <div class="calendar-item">
+          <h5 class="text-center">Monday</h5>
+          <ul>
+            <li>water1</li>
+          </ul>
+        </div>
         <div class="calendar-item">T</div>
         <div class="calendar-item">W</div>
         <div class="calendar-item">Th</div>
@@ -72,6 +79,23 @@
 
   <div class="grid-item">
     <h1>Plants</h1>
+    <div class="plants">
+      <div class="plant-item">
+        <img src="#"><p>Christmas Cactus</p><p>Schlumbergera</p>
+      </div>
+      <div class="plant-item">
+        <img src="#"><p>Avocado</p><p>Persea americana</p>
+      </div>
+      <div class="plant-item">
+        <img src="#"><p>Curly Ivy</p><p>Hedera helix</p>
+      </div>
+      <div class="plant-item">
+        <img src="#"><p>Poinsettia</p><p>Euphorbia pulcherrima</p>
+      </div>
+      <div class="plant-item">
+        <img src="#"><p>Aloe</p><p>Aloe vera</p>
+      </div>
+     </div>
   </div>
   
 </div>

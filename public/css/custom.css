@@ -108,12 +108,30 @@ h1 {
 .today {
   display: grid;
   grid-template-columns: auto;
+  grid-gap: 1em;
   justify-content: center;
+  max-height: 300px;
+  overflow-y: auto;
+  overflow-y: scroll;
 }
 
 .today-item {
   background-color: #F7FBE1;
   padding: 1em;
-  border: 1px solid black;
-  border-radius: 5%;
+  border-radius: 3%;
+}
+.plants {
+  display: inline-grid;
+  grid-template-columns: auto auto;
+  grid-gap: 1em;
+  justify-content: center;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.plant-item {
+  background-color: #F7FBE1;
+  padding: 1em;
+  border-radius: 3%;
+  overflow-y: scroll;
 }
