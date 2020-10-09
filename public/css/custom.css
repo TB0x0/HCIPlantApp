@@ -144,6 +144,7 @@ h1 {
 }
 
 .today-item {
+  cursor: pointer;
   background-color:#438A5E;
   padding: .5em;
   align-items: center;
