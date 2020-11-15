@@ -5,13 +5,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>HCIPlant</title>
 <link rel=stylesheet type="text/css" href="css/custom.css">
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/8.0.2/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+
 <script src="js/plantly.js"></script>
 <script src="js/showdate.js"></script>
 <script src="js/todayapplet.js"></script>
 </head>
 
 <body>
-
 <!-- Navigation Menu -->
 <div class="menu">
   <a href="index.html" class="active">Dash</a>
@@ -111,7 +119,7 @@
         <input type="radio" id="tropical" name="environment" value="tropical">
         <label for="other">Tropical</label> 
       </div>
-      <button type="submit">Add Plant</button>
+      <button type="submit" onclick="pushPlant()">Add Plant</button>
     </form> 
   </div>
 
@@ -137,5 +145,7 @@
   </div>
   
 </div>
+
+
 </body>
 </html>
